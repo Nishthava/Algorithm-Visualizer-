@@ -34,6 +34,10 @@ function App() {
   }
    useEffect(() => {
     generateArray();
+    useEffect(() => {
+  generateArray();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [arraySize]);
   }, [arraySize]);
 
 
