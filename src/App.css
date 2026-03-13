@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg,#f5f7ff,#eef1fb);
+}
+
+.App {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+button {
+  margin: 6px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #4f6cff, #2f3fbf);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+button:disabled {
+  background: #b8b8b8;
+  cursor: not-allowed;
+}
+.controls {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  width: 75%;
+  margin: 0 auto 30px auto;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+}
+.slider-container {
+  margin-top: 15px;
+}
+
+input[type="range"] {
+  width: 220px;
+  margin-left: 10px;
+  accent-color: #4f6cff;
+}
+.info-panel {
+  width: 70%;
+  margin: 20px auto;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-panel h2 {
+  margin-top: 0;
+}
+.visualizer-card {
+  background: white;
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+}
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.legend-color {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+.unsorted {
+  background: linear-gradient(180deg,#5f7cff,#2c3bbf);
+}
+
+.comparing {
+  background: #ff4d4d;
+}
+
+.sorted {
+  background: #0f9d58;
+}
